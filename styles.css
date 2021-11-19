@@ -1,9 +1,10 @@
 :root
 {
     background-image: url("images/pattern-background-desktop.svg");
-    background-size: 100% 200%;
-    background-position: center 90%;
-    --text-font-size: 12px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background-position: center 90%;*/
+    --text-font-size: 11px;
     --center-margin: 5% auto 5% auto;
     font-family: RedHatDisplay-Black;
 }
@@ -15,15 +16,16 @@
 #content
 {
     font-size: var(--text-font-size);
-    margin: 70px auto 0px auto;
-    border: 2px solid black;
-    width: 300px;
+    margin: 60px auto 0px auto;
+    /*border: 2px solid black;*/
+    width: 320px;
     height: 500px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-color: white;
 
 }
 #picture
@@ -33,9 +35,90 @@
 }
 h1
 {
-    /*margin: var(--center-margin);*/
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: hsl(223, 47%, 23%);
 }
 #text
 {
-    padding: 0% 15% 0% 15%;
+    
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+#pricing
+{
+    background-color:hsl(225, 100%, 98%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 2fr;
+    width: 80%;
+    height: 70px;
+}
+#price-value
+{
+    color: hsl(224, 23%, 55%);
+}
+
+#price
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: -3px;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+    text-align: center;
+    margin-bottom: -5px;
+}
+#change
+{
+    text-align: right;
+    margin: auto 0 auto 0;
+    margin-right: 10%
+}
+button
+{
+    width: 80%;
+    height: 38px;
+    margin-top: 20px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 10px 10px -3px rgb(131, 131, 228);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    border: 0px;
+    --text-font-size: 10px;
+    font-size: var(--text-font-size);
+}
+#cancel
+{
+    color: hsl(222, 10%, 47%);
+}
+button:hover
+{
+    background-color: hsl(245, 67%, 65%);
+    cursor: pointer;
+}
+#music
+{
+    margin-left: 10px;
+    margin-right: 18px;
+}
+#cancel:hover
+{
+    color: hsl(217, 8%, 20%);
+    cursor: pointer;
+}
+a:hover
+{
+    color: hsl(223, 11%, 62%);
 }
