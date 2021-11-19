@@ -13,7 +13,7 @@
     font-family: RedHatDisplay-Black;
     src: url(fonts/static/RedHatDisplay-Black.ttf);
 }  
-#content
+main
 {
     font-size: var(--text-font-size);
     margin: 60px auto 0px auto;
@@ -121,4 +121,9 @@ button:hover
 a:hover
 {
     color: hsl(223, 11%, 62%);
+}
+footer
+{
+    font-size: var(--text-font-size);
+    text-align: center;
 }
